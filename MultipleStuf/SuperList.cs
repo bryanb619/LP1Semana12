@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 
 
 namespace MultipleStuf
@@ -9,9 +10,7 @@ namespace MultipleStuf
 
 
         // Constructor classe herda uma lista de doubles
-        public SuperList() : base() 
-        {
-        } 
+        public SuperList() : base() {} 
 
         // 
         public void GetMinMax1(out double min, out double max)
@@ -34,30 +33,34 @@ namespace MultipleStuf
             }
         }
 
-        public class GetMinMax2
+        public void GetMinMax2()
         {
-            /*
-            double min = 0, max = 0;
+            MinMax minMax = new MinMax();
 
-            public GetMinMax2(SuperList doubles)
-            {
-
-            }
+            double min = this[0]; 
+            double max = this[0];
 
 
             foreach(double number in this)
             {
                 if(number < min) // 5,  //min = 7
                 {
-                    min = number;
+                    minMax.min = number;
                 }
 
                 else if(number > max) // max = 7
                 {
-                    max = number;
+                    minMax.max = number;
                 }
             }
-            */
+
+            Console.WriteLine(minMax.min + minMax.max);
+        }
+
+        public class MinMax
+        {
+            public double min = 0;
+            public double max = 0;
 
         }
 
@@ -83,11 +86,9 @@ namespace MultipleStuf
 
             // returning ref type values
             return new Tuple<double, double> (min, max);
-
-
         }
 
-        public  GetMinMax4()
+        public (double Min, double Max) GetMinMax4()
         {
 
             double min = this[0]; // 7
@@ -105,10 +106,9 @@ namespace MultipleStuf
                     max = number;
                 }
             }
-
+            return (min, max);
         }
 
-
-
+      
     }
 }
