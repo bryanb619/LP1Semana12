@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MultipleStuf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12aba813511c75f394d9b1e88216df40f491d1f4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94f7ef7a36fda3026f3ea85f1fded849e8405f85")]
 [assembly: System.Reflection.AssemblyProductAttribute("MultipleStuf")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MultipleStuf")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
